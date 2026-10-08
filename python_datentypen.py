@@ -1,3 +1,5 @@
+# Aufgabe 2 | Python Datentypen
+
 ## Implizite Typisierung (Python bestimmt den Typ automatisch)
 # Variablen definieren
 first_name = "Alice"
