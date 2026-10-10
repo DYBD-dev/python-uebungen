@@ -67,7 +67,7 @@ print()
 # Erst entfernt strip() die Leerzeichen am Rand und gibt einen neuen String zurück,
 # auf diesem neuen String ersetzt dann replace() "Python" durch "coding".
 print('Ersetze jedes Python in "bio" durch coding und entferne überflüssige Leerzeichen:' +  bio.strip().replace("Python", "coding"))
-# Ausgabe: Ersetze jedes Python in "bio" durch coding und entferne überflüssige Leerzeichen: Ich lerne gerade coding und
+# Ausgabe: Ersetze jedes Python in "bio" durch coding und entferne überflüssige Leerzeichen:Ich lerne gerade coding und
 #          das ist ein mehrzeiliger String.
 print()
 
@@ -75,7 +75,7 @@ print()
 # split() erwartet nur das Trennzeichen (hier das Leerzeichen), nicht die Wörter selbst.
 # Falsch wäre: bio.split("Ich", "lerne", "gerade", "Python") ergibt TypeError
 print('Der Satz in "bio" als Liste:', bio.split(" "))
-# Ausgabe: Der Satz in 'bio' als Liste:  ['', '', 'Ich', 'lerne', 'gerade', 'Python', 'und\ndas', 'ist', 'ein', 'mehrzeiliger', 'String.', '', '']
+# Ausgabe: Der Satz in "bio" als Liste:  ['', '', 'Ich', 'lerne', 'gerade', 'Python', 'und\ndas', 'ist', 'ein', 'mehrzeiliger', 'String.', '', '']
 # Die leeren '' kommen von den Leerzeichen am Rand, 'und\ndas' vom Zeilenumbruch.
 # bio.split() ohne Klammerinhalt trennt an jedem Leerraum und lässt die leeren Einträge weg.
 print()
@@ -129,6 +129,6 @@ print()
 print(first_name.center(50, "-"))        # ---------------------Daniela----------------------
 print()
 
-# Zähle, wie oft der Buchstabe "a" in first_name vorkommt (hier statt in full_name).
+# Zähle, wie oft der Buchstabe "a" in first_name vorkommt.
 # count() unterscheidet Groß- und Kleinschreibung. Gezählt werden nur kleine "a".
 print(first_name.count("a"))        # 2
