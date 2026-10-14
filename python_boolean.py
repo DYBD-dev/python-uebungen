@@ -8,7 +8,7 @@
 # Danach prüfst du, ob du richtig lagst.
 print(bool("Hallo"))  
 print(bool(42))
-print(bool(3.14))      #bei allen kommt True
+print(bool(3.14))      # bei allen kommt True
 print(bool([1,2,3]))
 print(bool({"name": "Daniela"}))
 print()
@@ -21,7 +21,7 @@ print()
 print(bool(""))
 print(bool(0))
 print(bool(0.0))
-print(bool([]))     #bei allen kommt False
+print(bool([]))     # bei allen kommt False
 print(bool(()))
 print(bool({}))
 print(bool(None))
@@ -48,6 +48,15 @@ else:
     print("Die Einkaufsliste ist leer")        # Die Einkaufsliste ist leer
 print()
 
+#Milch und Brot
+shopping_list = ["Milch", "Brot"]
+if shopping_list:
+    print("Die Einkaufsliste hat Einträge")     # Die Einkaufsliste hat Einträge
+else:
+    print("Die Einkaufsliste ist leer")
+print()
+
+
 ## 5. Eigene Prüfung bauen
 # Erstelle drei Variablen: username = "", age = 0, favorite_color = "Lila".
 # Schreib für jede Variable ein eigenes if/else, das ausgibt, ob ein Wert vorhanden ist
@@ -60,17 +69,17 @@ favorite_color = "lila"
 if username:
     print("Benutzername vorhanden")
 else:
-    print("Benutzername fehlt")     #Benutzername fehlt
+    print("Benutzername fehlt")     # Benutzername fehlt
 print()
 
 if age:
     print("Alter vorhanden")
 else:
-    print("Alter fehlt")    #Alter fehlt
+    print("Alter fehlt")    # Alter fehlt
 print()
 
 if favorite_color:
-    print("Lieblingsfarbe vorhanden")   #Lieblingsfarbe vorhanden
+    print("Lieblingsfarbe vorhanden")   # Lieblingsfarbe vorhanden
 else:
     print("Lieblingsfarbe fehlt")
 print()
