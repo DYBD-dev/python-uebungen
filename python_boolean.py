@@ -27,6 +27,11 @@ print(bool({}))
 print(bool(None))
 print()
 
+# Ergänzung zu 2.
+# Gemeinsam ist allen Werten: Sie sind leer oder null (oder None). Das nennt man "Falsy".
+# Alles mit Inhalt ist dagegen "Truthy", wie bei Teil 1.
+# Merkhilfe: Falsy ist alles, was "nichts" oder "null" bedeutet.
+
 ## 3. Der Stolperstein
 # Gib bool("0") und bool("False") aus. Das sind Strings, keine Zahl und kein Boolean.
 # Überleg vorher: True oder False? Schreib in einen Kommentar, warum das so ist.
@@ -34,6 +39,12 @@ print()
 print(bool("0"))        # True
 print(bool("False"))    # True
 print()
+
+# Ergänzung zu 3.
+# Bei einem String zählt nur, ob Zeichen drinstehen, nicht was dort steht.
+# "0" hat ein Zeichen, "False" hat fünf: beide sind True.
+# Nur der leere String "" ist False.
+# Die Anführungszeichen entscheiden: bool(0) ist False, bool("0") ist True.
 
 ## 4. Truthy/Falsy mit if/else
 # Erstelle eine Variable shopping_list mit einer leeren Liste.
@@ -55,6 +66,12 @@ if shopping_list:
 else:
     print("Die Einkaufsliste ist leer")
 print()
+
+# Ergänzung zu 4.
+# if shopping_list: heißt "wenn die Liste Inhalt hat". Python wandelt die Liste selbst in
+# True oder False um, ein bool() ist dafür nicht nötig.
+# Der Doppelpunkt nach if und else ist Pflicht, die Einrückung zeigt, was zum Block gehört.
+# Die zweite Prüfung nutzt dieselbe Variable mit neuem Inhalt. Der if/else-Block bleibt gleich.
 
 
 ## 5. Eigene Prüfung bauen
@@ -84,6 +101,10 @@ else:
     print("Lieblingsfarbe fehlt")
 print()
 
+# Ergänzung zu 5.
+# if username: heißt "wenn ein Wert vorhanden ist". Der if-Block ist also der Fall "vorhanden",
+# der else-Block der Fall "fehlt". Beim Alter ist das ein Stolperstein, siehe Teil 6.
+
 ## 6. Bonus: Wann hilft Truthy/Falsy, wann nicht?
 # Setze age = 0 (ein echtes Alter, zum Beispiel für ein neugeborenes Baby).
 # Prüfe mit  if age:  ob ein Alter angegeben wurde. Was passiert?
@@ -110,3 +131,11 @@ if age is not None:
 else:
     print("Alter fehlt")        # Alter fehlt
 
+print()
+
+# Ergänzung zu 6.
+# None ist Pythons Wert für "nichts angegeben". Es ist weder 0 noch "" noch eine leere Liste.
+# if wert: prüft "nicht leer und nicht null" und passt bei Listen und Texten.
+# if wert is not None: prüft "wurde überhaupt etwas angegeben" und passt, wenn 0 oder ein
+# leerer Text selbst gültige Werte sind (wie das Alter 0).
+# None prüft man mit is, nicht mit ==.
