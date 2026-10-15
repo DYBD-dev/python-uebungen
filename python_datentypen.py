@@ -16,11 +16,11 @@ print("Größe:", height)              # Größe: 1.65
 print("Student/in:", is_student)     # Student/in: True
 
 # Abfrage Typ
-print("Der Typ 'Vorname' ist ", type(first_name))   #<class 'str'>
-print("Der Typ 'Name' ist ", type(last_name))       #<class 'str'>
-print("Der Typ 'Alter' ist ", type(age))            #<class 'int'>
-print("Der Typ 'Größe' ist ", type(height))         #<class 'float'>
-print("Der Typ 'Student/in' ist", type(True))       #<class 'bool'>
+print("Der Typ 'Vorname' ist", type(first_name))   #<class 'str'>
+print("Der Typ 'Name' ist", type(last_name))       #<class 'str'>
+print("Der Typ 'Alter' ist", type(age))            #<class 'int'>
+print("Der Typ 'Größe' ist", type(height))         #<class 'float'>
+print("Der Typ 'Student/in' ist", type(is_student))       #<class 'bool'>
 
 ## Typsicherheit bei Operationen
 # Folgendes Beispiel führt zu einem Fehler, weil zwischen Text und Zahl weder ein Komma noch ein + steht.
@@ -28,7 +28,7 @@ print("Der Typ 'Student/in' ist", type(True))       #<class 'bool'>
 #print("Nächstes Jahr wirst du " ((age) + 1) "Jahre alt sein.") # SyntaxError: invalid syntax. Is this intended to be part of the string?
 
 # Richtig (Kommas trennen die Teile, print() wandelt die Zahl selbst in Text um):
-print("Nächstes Jahr wirst du ", ((age) + 1), "Jahre alt sein.")
+print("Nächstes Jahr wirst du", ((age) + 1), "Jahre alt sein.")
 #Alternativ (mit +, dann muss die Zahl mit str() selbst in Text umgewandelt werden):
 print("Nächstes Jahr wirst du " + str(age +1), "Jahre alt sein.")
 
@@ -36,7 +36,6 @@ print("Nächstes Jahr wirst du " + str(age +1), "Jahre alt sein.")
 #Die Situation: Wenn ein Programm später etwas von einem Menschen abfragt 
 #(mit input()), kommt die Antwort immer als Text an. Auch wenn jemand 30 tippt,
 #ist das für Python erst einmal der Text "30" und keine Zahl.
-
 user_input = "30"                                                   # sieht aus wie eine Zahl, ist aber Text
 user_age = int(user_input)                                          # jetzt ist es wirklich eine Zahl
 print("Nächstes Jahr wirst du", user_age + 1, "Jahre alt sein")     # 31
@@ -60,6 +59,12 @@ total = price * amount         # 13.5
 print("Gesamtpreis: " + str(total) + " Euro")    # Zahl -> Text, damit + funktioniert
 print("Gerundet auf ganze Euro:", int(total))    # 13 (abgeschnitten)
 
+# Ergänzung zum Umwandeln von Text.
+# int("4.50") ergibt einen ValueError, weil int() bei einem Text mit Punkt scheitert.
+# Erst mit float() in eine Kommazahl umwandeln, dann mit int() abschneiden: int(float("4.50")) ergibt 4.
+# Enthält der Text gar keine Zahl (int("abc")), gibt es denselben Fehler.
+
+
 # Zusätzliches Learning: Runden mit round()
 # int() schneidet die Nachkommastellen nur ab, round() rundet wirklich.
 print(int(10.7))       # 10 (abgeschnitten)
@@ -76,3 +81,7 @@ print(round(pi, 2))    # 3.14
 print(round(pi, 3))    # 3.142
 print(round(pi, 0))    # 3.0 (bleibt ein Float, round(pi) ohne 0 ergibt die Integer-Zahl 3)
 
+# Ergänzung zu round().
+# Die Regel steht in der Python-Dokumentation bei round(): https://docs.python.org/3/library/functions.html#round
+# Bei Kommazahlen kann round() manchmal überraschen: round(2.675, 2) ergibt 2.67 und nicht 2.68,
+# weil 2.675 im Computer nicht ganz exakt gespeichert ist (siehe Aufgabe 3, Float).
