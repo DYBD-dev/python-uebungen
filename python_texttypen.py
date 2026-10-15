@@ -19,6 +19,11 @@ print("Ausgabe Mehrzeilig (mit überflüssigen Leerzeichen (für später)): ", b
 #          das ist ein mehrzeiliger String.
 print()
 
+# Ergänzung zu 1.
+# Das Komma in print() setzt zwischen die Teile selbst ein Leerzeichen.
+# Steht im Text schon eins (zum Beispiel "Vorname: "), sind es in der Ausgabe zwei.
+
+
 ## 2. Zeichen ansprechen und Strings schneiden (Slicing)
 # Gib das erste Zeichen von first_name und das letzte Zeichen von last_name aus.
 print("Erstes Zeichen Vorname: ", first_name[0])        # Erstes Zeichen Vorname:  D
@@ -31,6 +36,12 @@ print("Ausgabe erste 10 Zeichen: ", bio[0:10])        # Ausgabe erste 10 Zeichen
 # Kürzer geht auch bio[:10]. Die ersten zwei Zeichen sind Leerzeichen aus dem bio-Text.
 print()
 
+# Ergänzung zu 2.
+# Strings lassen sich wie Listen schneiden: string[von:bis], der Anfang zählt mit, das Ende nicht.
+# Mit einem dritten Wert gibt man die Schrittweite an: "Daniela"[::2] ergibt "Dnea".
+# "Daniela"[::-1] dreht den String um und ergibt "aleinaD".
+
+
 ## 3. Durch einen String iterieren
 # Gib mit einer for-Schleife jedes Zeichen von first_name in einer neuen Zeile aus.
 # Die Einrückung zeigt, was zur Schleife gehört. Pro Buchstabe läuft die Schleife einmal.
@@ -39,11 +50,13 @@ for char in first_name:
 # Ausgabe: sieben Zeilen, jeweils mit dem Text davor und dann D, a, n, i, e, l, a
 print()
 
+
 ## 4. Länge eines Strings
 # Gib die Länge von "bio" mit der Funktion len() aus.
 # len() zählt alle Zeichen, auch Leerzeichen und den Zeilenumbruch.
 print('Länge von "bio" ausgeben: ', len(bio))        # Länge von "bio" ausgeben:  64
 print()
+
 
 ## 5. Teilstrings prüfen
 # Prüfe, ob das Wort "Python" in bio vorkommt, und gib das Ergebnis aus.
@@ -55,6 +68,10 @@ print()
 # Zum Vergleich: "Java" in bio ergäbe False.
 print('Kommt das Wort Java nicht in "bio" vor? ', "Java" not in bio)        # Kommt das Wort Java nicht in "bio" vor?  True
 print()
+
+# Ergänzung zu 5.
+# in unterscheidet Groß- und Kleinschreibung: "python" in bio ist False, "Python" in bio ist True.
+
 
 ## 6. Strings verändern
 # Wandle first_name in Großbuchstaben und last_name in Kleinbuchstaben um.
@@ -80,6 +97,14 @@ print('Der Satz in "bio" als Liste:', bio.split(" "))
 # bio.split() ohne Klammerinhalt trennt an jedem Leerraum und lässt die leeren Einträge weg.
 print()
 
+# Ergänzung zu 6.
+# Strings sind unveränderbar. upper(), lower(), strip() und replace() ändern den Original-String
+# nicht, sie liefern immer einen neuen String. Wer ihn behalten will, speichert ihn:
+# bio = bio.strip()
+# Ein einzelnes Zeichen lässt sich nicht ersetzen: first_name[0] = "d" ergibt einen TypeError.
+# Bei Listen ist das anders, dort kann man Elemente direkt ändern.
+
+
 ## 7. Strings verknüpfen
 # Verbinde first_name und last_name zu einem String full_name, mit einem Leerzeichen dazwischen.
 # Gib den vollständigen Namen aus.
@@ -88,6 +113,7 @@ print("Strings verknüpft (Vollständiger Name): ", first_name, last_name)      
 # Mit + werden Strings direkt aneinandergehängt, das Leerzeichen muss man selbst mitgeben.
 print("Strings verknüpft (Vollständiger Name): ", last_name + ", " + first_name)    # Strings verknüpft (Vollständiger Name):  Torunlar, Daniela
 print()
+
 
 ## 8. String-Formatierung
 # Gib mit einem f-String aus:
@@ -109,6 +135,7 @@ print("Mein Vorname lautet {name} und ich bin {age} Jahre jung.".format(name=fir
 print("Mein Vorname lautet: {} und ich bin {} Jahre jung.".format(first_name, age))                   # Mein Vorname lautet: Daniela und ich bin 45 Jahre jung.
 print()
 
+
 ## 9. Sonderzeichen maskieren (Escape)
 # Erstelle einen String, der ein doppeltes und ein einfaches Anführungszeichen enthält.
 # Beispiel: Er sagt: "Python's Syntax ist super einfach!"
@@ -116,6 +143,11 @@ print()
 # weil der String selbst in doppelten Anführungszeichen steht.
 print("Er sagt: \"Python's Syntax ist super einfach!\"")        # Er sagt: "Python's Syntax ist super einfach!"
 print()
+
+# Ergänzung zu 9.
+# Der Backslash \ schaltet das nächste Zeichen um: \" und \' sind normale Anführungszeichen.
+# Weitere häufige Zeichen: \n (neue Zeile), \t (Tab) und \\ (ein einzelner Backslash).
+
 
 ## Bonus
 # Gib "bio" zentriert innerhalb von 50 Zeichen aus (String-Methode).
