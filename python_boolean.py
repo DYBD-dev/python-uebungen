@@ -13,6 +13,7 @@ print(bool([1,2,3]))
 print(bool({"name": "Daniela"}))
 print()
 
+
 ## 2. Falsy-Werte
 # Mach dasselbe für diese Werte: "" (leerer String), 0, 0.0, [] (leere Liste),
 # () (leeres Tupel), {} (leeres Dictionary) und None.
@@ -32,6 +33,7 @@ print()
 # Alles mit Inhalt ist dagegen "Truthy", wie bei Teil 1.
 # Merkhilfe: Falsy ist alles, was "nichts" oder "null" bedeutet.
 
+
 ## 3. Der Stolperstein
 # Gib bool("0") und bool("False") aus. Das sind Strings, keine Zahl und kein Boolean.
 # Überleg vorher: True oder False? Schreib in einen Kommentar, warum das so ist.
@@ -45,6 +47,7 @@ print()
 # "0" hat ein Zeichen, "False" hat fünf: beide sind True.
 # Nur der leere String "" ist False.
 # Die Anführungszeichen entscheiden: bool(0) ist False, bool("0") ist True.
+
 
 ## 4. Truthy/Falsy mit if/else
 # Erstelle eine Variable shopping_list mit einer leeren Liste.
@@ -104,6 +107,7 @@ print()
 # Ergänzung zu 5.
 # if username: heißt "wenn ein Wert vorhanden ist". Der if-Block ist also der Fall "vorhanden",
 # der else-Block der Fall "fehlt". Beim Alter ist das ein Stolperstein, siehe Teil 6.
+
 
 ## 6. Bonus: Wann hilft Truthy/Falsy, wann nicht?
 # Setze age = 0 (ein echtes Alter, zum Beispiel für ein neugeborenes Baby).
