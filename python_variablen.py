@@ -14,7 +14,8 @@ age = 44
 height = 1.65
 
 # Tipp zu Namen: Für Variablen- und Funktionsnamen nur a-z, Zahlen und Unterstrich
-# nutzen, keine Umlaute oder ß. In Texten (in Anführungszeichen) sind sie kein Problem.
+# nutzen, keine Umlaute oder ß (das geht technisch zwar, ist aber unüblich).
+# In Texten (in Anführungszeichen) sind sie kein Problem.
 
 # ---------------------------------------------------------------
 # 2. Variablen ausgeben
