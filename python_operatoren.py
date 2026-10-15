@@ -39,7 +39,6 @@ print()
 # Alternativ gibt x //= 3 direkt eine ganze Zahl, wenn die Nachkommastellen egal sind.
 
 
-
 ## 3. Vergleichsoperatoren
 # Vergleiche a und b mit ==, !=, >, <, >= und <=.
 # Gib das Ergebnis jedes Vergleichs aus.
@@ -55,7 +54,6 @@ print()
 # Ein einzelnes = weist zu (a = 17), zwei == vergleichen (a == 17).
 # Vergleiche liefern immer True oder False und werden oft als Bedingung in if benutzt.
 # != heißt "ungleich" (das ! steht für "nicht", also "nicht gleich").
-
 
 
 ## 4. Logische Operatoren
@@ -76,7 +74,6 @@ print()
 # Oft zusammen mit Vergleichen: a > 10 and b < 10
 
 
-
 ## 5. Identitätsoperatoren
 # Erstelle zwei Listen: list1 = [1, 2, 3] und list2 = list1.
 # Prüfe, ob list1 is list2 gilt und ob list1 is not list2 gilt.
@@ -90,12 +87,12 @@ print("list1 is list3:", list1 is list3)              # list1 is list3: False
 print()
 
 # Ergänzung zu 5.
-# == fragt: Ist der Inhalt gleich? is fragt: Ist es dasselbe Objekt?
+# == fragt: Ist der Inhalt gleich? "is" fragt: Ist es dasselbe Objekt?
 # list2 = list1 legt keine neue Liste an, list2 ist nur ein zweiter Name für dieselbe Liste.
 # list3 hat zwar denselben Inhalt, ist aber eine eigene Liste: list1 == list3 ist True,
 # list1 is list3 ist False.
 # Eine echte Kopie gibt es mit list1.copy().
-# Auch is None (aus Aufgabe 5, Boolean) nutzt diesen Operator.
+# Auch "is None" (aus Aufgabe 5, Boolean) nutzt diesen Operator.
 
 
 
@@ -109,11 +106,10 @@ print('"Java" not in text:', "Java" not in text)           # "Java" not in text:
 print()
 
 # Ergänzung zu 6.
-# in sucht auch Teile eines Wortes: "gram" in text ist True ("programming").
+# "in" sucht auch Teile eines Wortes: "gram" in text ist True ("programming").
 # Groß- und Kleinschreibung zählt: "python" in text ist False.
-# not in dreht das Ergebnis um: True heißt hier "kommt nicht vor".
-# in funktioniert auch bei Listen, dort muss der ganze Eintrag passen.
-
+# "not in" dreht das Ergebnis um: True heißt hier "kommt nicht vor".
+# "in" funktioniert auch bei Listen, dort muss der ganze Eintrag passen.
 
 
 ## 7. Bitweise Operatoren (BONUS)
@@ -138,7 +134,6 @@ print()
 #   a ^ b  = 1 1 0   (6)  XOR: 1, wenn beide verschieden sind
 # << 1 verdoppelt die Zahl, >> 1 halbiert sie (abgerundet).
 # Im Alltag braucht man das selten.
-
 
 
 ## 8. Operatorrangfolge
