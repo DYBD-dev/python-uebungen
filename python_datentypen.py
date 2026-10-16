@@ -1,4 +1,4 @@
-# Aufgabe 2 | Python Datentypen
+# Aufgabe 2 | Python Datentypen (Data Types)
 
 ## Implizite Typisierung (Python bestimmt den Typ automatisch)
 # Variablen definieren

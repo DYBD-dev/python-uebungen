@@ -1,4 +1,4 @@
-# Aufgabe 3 | Python numerische Datentypen
+# Aufgabe 3 | Python numerische Datentypen (Numeric Types)
 
 # Importieren von dem Modul random
 import random

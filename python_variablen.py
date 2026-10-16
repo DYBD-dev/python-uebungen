@@ -1,4 +1,4 @@
-# Aufgabe 1 | Python Variablen
+# Aufgabe 1 | Python Variablen (Variables)
 
 # ---------------------------------------------------------------
 # 1. Variablen erstellen

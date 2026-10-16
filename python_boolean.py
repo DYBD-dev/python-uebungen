@@ -1,4 +1,4 @@
-# Aufgabe 5 | Python Boolean Type
+# Aufgabe 5 | Python Boolean-Typ (Boolean Type)
 
 ## 1. Truthy-Werte
 # Gib mit bool() für diese fünf Werte aus, ob sie als True oder False ausgewertet werden:

@@ -1,4 +1,4 @@
-# Aufgabe 4 | Python Texttypen
+# Aufgabe 4 | Python Texttypen (Text Types)
 
 ## 1. Strings erstellen
 # Erstelle zwei Strings: first_name und last_name mit deinem Vor- und Nachnamen.

@@ -1,4 +1,4 @@
-# Aufgabe 7 | Python Listen
+# Aufgabe 7 | Python Listen (Lists)
 
 ## 1. Eine Liste erstellen und ausgeben
 # Erstelle eine Liste mit 5 Elementen (zum Beispiel deine Lieblingsfrüchte, Zahlen

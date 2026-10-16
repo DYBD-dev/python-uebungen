@@ -20,6 +20,7 @@ Lernreise als Quereinsteigerin im Bereich KI & Automatisierung.
 
 ### Listen
 - [Aufgabe 7: Listen](python_listen.py)
+- [Aufgabe 8: Listenabstraktion](python_listenabstraktion.py)
 
 ## 🎯 Ziel
 Dokumentation und Lernfortschritt verfolgen 🚀

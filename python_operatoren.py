@@ -1,4 +1,4 @@
-# Aufgabe 6 | Python Operatoren
+# Aufgabe 6 | Python Operatoren (Operators)
 
 ## 1. Arithmetische Operatoren
 # Erstelle zwei Variablen: a und b mit den Werten 17 und 5.
